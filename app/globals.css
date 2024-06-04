@@ -1,0 +1,48 @@
+:root {
+  --primary500: rgb(255, 106, 0);
+  --secondary500: royalblue;
+
+  --bg100: rgb(163, 160, 160);
+  --bg300: rgb(219, 217, 212);
+  --bg500: rgb(239, 236, 232);
+  --bg700: rgb(239, 236, 232);
+
+  --text300: #111;
+  --text500: #333;
+  --text700: #666;
+  --text900: #999;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary500: rgb(255, 106, 0);
+    --secondary500: royalblue;
+
+    --bg100: rgb(10, 10, 10);
+    --bg300: rgb(31, 30, 28);
+    --bg500: rgb(39, 36, 34);
+    --bg700: rgb(66, 60, 55);
+
+    --text300: #fff;
+    --text500: #eee;
+    --text700: #ddd;
+    --text900: #aaa;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: var(--bg500);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

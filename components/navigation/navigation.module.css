@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  position: relative;
+  background-color: var(--bg300);
+}
+.header::after {
+  content: '';
+  background-color: var(--bg300);
+  box-shadow: 0px 5px 15px var(--bg100);
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  right: 50%;
+  z-index: -1;
+}
+.header::before {
+  content: '';
+  background-color: var(--bg300);
+  box-shadow: 0px 5px 15px var(--bg100);
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  left: 50%;
+  z-index: -1;
+}
+.header a {
+  text-decoration: none;
+}
+.header h1 {
+  color: var(--primary500);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.header p {
+  color: var(--text700);
+  font-size: 0.75rem;
+  padding-left: 4px;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 3rem;
+  padding-right: 2rem;
+  color: var(--text700);
+}
+.listItem a {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+.listItem.active {
+  color: var(--primary500);
+}
+.listItem a:hover {
+  color: var(--text300);
+}
